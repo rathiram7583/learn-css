@@ -19,7 +19,36 @@ h1{
     font-family: "Times New Roman",Georgia, serif;
     text-align: center;
 }
+ nav{
+     width:auto;
+     max-width: 500px;
+     background-color: salmon;
+     margin:16px auto;/*margin top/bottom(16px) then left and right is auto*/
 
+ }
+ nav ul{
+     text-align: center;
+     padding:0;
+ }
+
+ nav ul li 
+ {
+     display:inline-block;
+ }
+
+ nav ul li a
+{
+    text-decoration: none;/*Disable the underline*/
+    display:inline-block;
+    padding:16px 32px ;
+
+}
+
+nav ul li a:hover{
+    background-color: rgb(50,50,50);
+    color:#fff;
+    
+}
 /* Text meant only for screen readers. */
 .screen-reader-text {
     border: 0;
@@ -58,3 +87,18 @@ h1{
       list-style: none;
       height:0;
   }
+  .overflow-hidden{
+      overflow:hidden;
+      height:100px;
+
+  }
+
+  .overflow-visible{
+      overflow:visible;
+      height:100px;
+  }
+
+  .overflow-scroll{
+    overflow:scroll;
+    height:100px;
+}
