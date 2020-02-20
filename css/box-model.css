@@ -1,0 +1,25 @@
+[role="presentation"]
+{
+    width:500px;
+    height:
+    432px;
+    background: gray;
+
+    margin-top: 64px;
+    margin-right: auto;
+    margin-bottom:64px;
+    margin-left: auto;
+    /* margin :64px auto*/
+
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+/* padding 64px */
+
+    border-top: 16px solid red;
+    border-right: 16px solid yellow;
+    border-bottom: 16px solid green;
+    border-left: 16px solid blue;
+
+}
