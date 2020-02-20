@@ -44,10 +44,10 @@ h1{
 
 }
 
-nav ul li a:hover{
+nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     background-color: rgb(50,50,50);
-    color:#fff;
-    
+    color:greenyellow;
+
 }
 /* Text meant only for screen readers. */
 .screen-reader-text {
