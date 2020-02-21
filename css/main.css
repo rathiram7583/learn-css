@@ -1,10 +1,17 @@
-*{
+*{/*Basic browser reset*/
     box-sizing:border-box;
     margin:0;
     padding:0;
     font-size:16px;
 
 
+}
+body{
+background-image:url(../img/bg-landscape.jpg);
+background-size: cover;/*cover the whole element*/
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
 }
 
 article{
@@ -21,23 +28,64 @@ p{
     line-height: 1.5;
     color:rgb(33,33,33);
     background-color:lightcyan;
+    margin-bottom=16px;
+}
+
+#float-practice{
+    float:right;
+    margin-top:0;
+    margin-right:16px;
+    margin-bottom:16px;
+    margin-left:0;
+    /*margin:0 16 16 0;*/
+
+}
+#z-index-practice{/*visual layering think photoshop which element should appear on top*/
+    display:block;
+    position:absolute;
+    top:300px;
+    right:0;
+    left:0;
+    margin:auto;
+    z-index:-1;
+
+}
+h1,h2,h4,h5,h6{
+    font-size:50px;
+    font-family: "Times New Roman",Georgia, serif;
+    
+    padding-top:16px;
 }
 h1{
-    font-family: "Times New Roman",Georgia, serif;
     text-align: center;
-    padding-top:75px;
+    padding-top:50px;
+}
+h2{
+    font-size:32px;
+  
 }
  nav{
      width:auto;
      max-width: 500px;
      background-color: salmon;
-     margin:0 auto;/*margin top/bottom(16px) then left and right is auto*/
+     margin:0 auto;/*margin top/bottom(16px) then right left
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     is auto*/
 
      position: fixed;
      top:0;
      right:0;
      bottom:auto;
      left:0;
+     z-index:2;
  }
  nav ul{
      text-align: center;
