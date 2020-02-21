@@ -1,4 +1,11 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-size:16px;
 
+
+}
 
 article{
     width: auto;
@@ -18,13 +25,19 @@ p{
 h1{
     font-family: "Times New Roman",Georgia, serif;
     text-align: center;
+    padding-top:75px;
 }
  nav{
      width:auto;
      max-width: 500px;
      background-color: salmon;
-     margin:16px auto;/*margin top/bottom(16px) then left and right is auto*/
+     margin:0 auto;/*margin top/bottom(16px) then left and right is auto*/
 
+     position: fixed;
+     top:0;
+     right:0;
+     bottom:auto;
+     left:0;
  }
  nav ul{
      text-align: center;
