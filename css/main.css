@@ -163,3 +163,35 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     overflow:scroll;
     height:100px;
 }
+
+#background-bullets ,
+#image-bullets{
+    list-style: none;
+    margin:16px auto;
+    padding :16px 16px 16px
+
+}
+
+#background-bullets li{
+    background-image:url("../img/list.png");
+    background-repeat: no-repeat;
+    background-size:32px;
+    background-position:top-left ;
+    padding:8px 8px 8px 64px;
+}
+
+#image-bullets li{
+    position:relative;
+    padding:8px 8px 8px 64px;
+
+}
+#image-bullets li img{
+    position:absolute;
+    
+    top:0;
+    left:0;
+    width:32px;
+    height:32px;
+    
+
+}
