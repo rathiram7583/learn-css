@@ -14,7 +14,7 @@
 code{
     white-space: pre;
     font-family:"JetBrains Mono",Consolas,monospace;
-    color: hotpink;
+    color:greenyellow;
   
 
 }
@@ -71,9 +71,8 @@ p{
 
 }
 h1,h2,h4,h5,h6{
-    font-size:50px;
+    font-size:32px;
     font-family: "Great Vibes",Georgia, serif;
-    
     padding-top:16px;
 }
 h1{
@@ -83,23 +82,14 @@ h1{
 h2{
     font-family: 'Great Vibes','Comic sans','cursive';
     font-size:32px;
-  
+    color:rgb(28, 207, 28);
+    
 }
  nav{
      width:auto;
      max-width: 500px;
      background-color: salmon;
-     margin:0 auto;/*margin top/bottom(16px) then right left
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     is auto*/
+     margin:0 auto;/*margin top/bottom(16px) then right left is auto*/
 
      position: fixed;
      top:0;
@@ -215,4 +205,28 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     height:32px;
     
 
+}
+
+#social-media-links{
+    list-style: none;
+    text-align: center;
+}
+
+#social-media-links >li{/* > direct child selection*/
+    display:inline-block;
+    margin:8px;
+
+
+
+}
+
+#social-media-links .fab{
+    color:rgb(28, 207, 28,1);
+    font-size:32px;
+}
+
+#social-media-links a:hover .fab,
+#social-media-links a:focus .fab,
+#social-media-links a:active .fab{
+    color:rgb(28, 207, 28,0.5);
 }
