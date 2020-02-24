@@ -74,6 +74,7 @@ h1,h2,h4,h5,h6{
     font-size:32px;
     font-family: "Great Vibes",Georgia, serif;
     padding-top:16px;
+    color:rgba(28, 207, 28,1);
 }
 h1{
     text-align: center;
@@ -189,11 +190,13 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     background-size:32px;
     background-position:top-left ;
     padding:8px 8px 8px 64px;
+    color:rgba(28, 207, 28,1);
 }
 
 #image-bullets li{
     position:relative;
     padding:8px 8px 8px 64px;
+    color:rgba(28, 207, 28,1);
 
 }
 #image-bullets li img{
@@ -221,12 +224,12 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
 }
 
 #social-media-links .fab{
-    color:rgb(28, 207, 28,1);
+    color:rgba(28, 207, 28,1);
     font-size:32px;
 }
 
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
 #social-media-links a:active .fab{
-    color:rgb(28, 207, 28,0.5);
+    color:rgba(28, 207, 28,0.5);
 }
