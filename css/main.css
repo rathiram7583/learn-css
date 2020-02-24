@@ -82,9 +82,18 @@ h1{
 }
 h2{
     font-family: 'Great Vibes','Comic sans','cursive';
-    font-size:32px;
+    font-size:26px;
     color:rgb(28, 207, 28);
     
+    
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 20px;
 }
  nav{
      width:auto;
@@ -233,3 +242,21 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
 #social-media-links a:active .fab{
     color:rgba(28, 207, 28,0.5);
 }
+
+@media screen and (min-width:1024px){
+
+
+    body{
+        background:greenyellow;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 26px;
+    }
+}
+
