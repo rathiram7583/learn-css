@@ -8,8 +8,11 @@
     url('../font/jetbrainsmono/JetBrainsMono-Regular.ttf') format('truetype'),
     url('../font/jetbrainsmono/JetBrainsMono-Bold.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-style:italic;
+
 }
+
+
 
 code{
     white-space: pre;
@@ -17,6 +20,24 @@ code{
     color:greenyellow;
   
 
+}
+/* defining a animation*/
+@keyframes my-animation{/*we get to define at which point in an animation changes occur*/
+    0%{
+        transform:scale(1);/*what change should change at this point in the animation*/
+
+    }
+    50%{
+        transform: scale(1.2);
+
+    }
+    75%{
+        transform: scale(1.5);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
 *{/*Basic browser reset*/
     box-sizing:border-box;
@@ -330,6 +351,18 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     border:6px dotted indigo;
     
 }
+.transition-transform button:nth-child(2)
+{
+    color: lightskyblue;
+    background-color: crimson;
+
+}
+.transition-transform button:nth-child(3)
+{   
+    color:lightpink;
+    background-color: darkmagenta;
+}
+
 /* transform hover*/
 .transition-transform div{
     display: inline-block;
@@ -349,6 +382,22 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
     rotate(35deg)
     scale(2);
     
+
+
+}
+
+#keyframe-test{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-color: firebrick;
+    margin: 64px;
+    border-radius: 100px;
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
 
 
 }
