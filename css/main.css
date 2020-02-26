@@ -106,6 +106,7 @@ h4{
      right:0;
      bottom:auto;
      left:0;
+     z-index:4;
      
  }
  nav ul{
@@ -219,6 +220,73 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
 
 }
 
+
+.gradient-bg {
+    height: 300px;
+    opacity: 0.75;
+    margin-top: 50px;
+    /* Gradient generated at https://CSSGradient.IO */
+    background: rgb(2,0,36);
+    background: linear-gradient(144deg, rgba(2,0,36,1) 15%, rgba(9,9,121,1) 26%, rgba(9,15,125,1) 28%, rgba(39,255,0,1) 40%, rgba(6,78,166,1) 51%, rgba(202,4,191,1) 63%, rgba(255,214,0,1) 84%, rgba(0,212,255,1) 100%); 
+    box-shadow: 32px 32px 0 0 rgba( 0, 0, 0, 1 );
+}
+
+.speech-bubble {
+    background: rgba( 255, 255, 255, 0.95 );
+    border-radius: 1.5em;
+    border-bottom-right-radius: 0;
+    max-width: 300px;
+    padding: 1.5em;
+    color: rgba( 33, 33, 33, 1 );
+    margin-top: 75px;
+    position: relative;
+}
+
+.speech-bubble::after { /* DOUBLE colon is a PSEUDO ELEMENT. This is a fake element... keep in mind its content cannot be read by screen-readers or search engines --> ONLY use it for PURELY visual text with no importance/meaning. */
+    /* Pseudo-elements require the "content" property. */
+    content: '';
+    /* Start triangle--> */
+    display: block;
+    width: 0;
+    height: 0;
+    box-sizing: content-box;
+    border-top: 0 solid transparent;
+    border-right: 32px solid rgba( 255, 255, 255, 0.95 );
+    border-bottom: 32px solid transparent;
+    border-left: 0 solid transparent;
+    /* <--End triangle. */
+    /* Position it at the bottom right corner: */
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+
+.video-section{
+    position: relative;
+    overflow: hidden;
+
+}
+.video-section > * {
+    position: relative;
+    z-index: 3;
+}
+
+.video-section p{
+    background: none;
+}
+.video-section video{
+    position:absolute;
+    /*top:0;*/
+    right:0;
+    bottom:0;
+    /*left:0;*/
+    width:150%;
+    height:auto;
+    z-index:1;
+
+
+}
 #social-media-links{
     list-style: none;
     text-align: center;
